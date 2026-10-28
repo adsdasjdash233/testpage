@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+        width: 550px;
+        margin: 0 auto;
+        }
+    
+        h1{
+            text-align: center;
+        }
+        form{
+            background: #eee;
+            padding: 20px 10px;
+        }
+        fieldset{
+            border: none;
+        }
+        form li{
+            margin-bottom: 5px;
+        }
+        label{
+            width: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id = "container">
+        <h1>회원 가입</h1>
+        <form action="log.php" method="post" name="logup">
+            <fieldset>
+                <legend>로그인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="id">아이디* </label>
+                        <input type="text" id="id" name="id" required placeholder="8자이상">
+                    </li>
+                    <li>
+                        <label for="pw">비밀번호</label>
+                        <input type="password" id="pw" name="pw">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>개인정보</legend>
+                <ul>
+                    <li>
+                        <label for="user-name">이름</label>
+                        <input type="text" id="user_name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="fruit">과일 선택</label>
+                        <label><input type="radio" name="fruit" value="apple" checked>사과</label>
+                        <label><input type="radio" name="fruit" value="mango">망고</label>
+                        <label><input type="radio" name="fruit" value="orange">오렌지</label>
+                    </li>
+                    <li>
+                        <label for="sns">sns선택</label>
+                        <label><input type="checkbox" name="sns" value="instar" checked>인스타그램</label>
+                        <label><input type="checkbox" name="sns" value="facebook">페이스북</label>
+                        <label><input type="checkbox" name="sns" value="kakaotalk">카카오톡</label>
+                    </li>
+                    <li>
+                        <label for="color">색 선택</label>
+                        <select id="color">
+                            <option value="red">빨간색</option>
+                            <option value="blue">파란색</option>
+                            <option value="green" selected>초록색</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="memo">지원동기</label>
+                       <!-- <textarea name="memo" id="memo" rows="5" cols="40" readonly>하나둘셋</textarea>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         -->
+                        <textarea name="memo" id="memo" rows="5" cols="40" placeholder="지원동기 500자 이하로 적어주세요"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            <ul>
+                <li>
+                    <input type="submit" value="전송버튼">
+                    <button type="reset">취소버튼</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
